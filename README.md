@@ -1,2 +1,2 @@
-# Boshen-s-cottage
-record my life---development of coding---and everything that interest me!
+                                        小恐龙的简陋小屋
+记录生活，记录每一步成长，走出我的代码成长路。
