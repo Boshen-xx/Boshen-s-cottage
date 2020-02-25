@@ -1,0 +1,26 @@
+#include<stdio.h>
+int main()
+{
+	int n,a[101]={0,},m,i;
+	scanf("%d",&n);
+	for(i=1;i<n+1;i++){
+		scanf("%d,",&a[i]);
+	}
+	scanf("%d",&m);
+	int left=1;//1不是零可以解决第一个数的问题 ，但查找最后一个数的问题还没解决 
+	int right,mid;
+	right=n;
+	while(left<=right){//把这里改成小于等于就可以解决查找最后一个的问题 ，算法竞赛入门这里印刷错误了草 
+		mid=left+(right-left)/2;
+		if(a[mid]==m){
+			break;
+		}
+		else if(a[mid]>m){
+			right=mid;
+		}
+		else{
+			left=mid+1;//这里还是挺关键的，和while的条件共同解决查找最后一个的问题 
+		}}
+		printf("%d",mid);
+	return 0;
+}
